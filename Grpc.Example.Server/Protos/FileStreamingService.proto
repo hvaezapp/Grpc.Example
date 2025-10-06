@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Grpc.Example.Server.Protos";
+
+package StreamingProto;
+
+service FileStreamingService{
+  rpc StreamFile(stream FileContent) returns (stream Result);
+}
+
+message FileContent{
+  bytes File=1;
+  string FileName=2;
+  double FileSize=3;
+}
+
+message Result {
+  double Percent=1;
+}
