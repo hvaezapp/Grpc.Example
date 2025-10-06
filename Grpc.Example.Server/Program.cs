@@ -1,4 +1,4 @@
-using Grpc.StreamingDemo.Api;
+using Grpc.Example.Server;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,7 +1,7 @@
 ﻿using Grpc.Core;
 using Grpc.Example.Server.Protos;
 
-namespace Grpc.StreamingDemo.Api;
+namespace Grpc.Example.Server;
 
 public class GrpcFileStreamingService(IWebHostEnvironment environment, ILogger<GrpcFileStreamingService> logger)
     : FileStreamingService.FileStreamingServiceBase
